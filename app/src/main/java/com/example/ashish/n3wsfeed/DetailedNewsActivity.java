@@ -33,16 +33,16 @@ public class DetailedNewsActivity extends AppCompatActivity {
         String newsDescription = intent.getStringExtra(EXTRAS_DESCRIPTION);
 
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbarDetail);
+        mToolbar =  findViewById(R.id.toolbarDetail);
         if (getSupportActionBar() != null) {
             setSupportActionBar(mToolbar);
             getSupportActionBar().setTitle(newsTitle);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        imageView = (ImageView) findViewById(R.id.image_view_news);
-        newsTitleTextView = (TextView) findViewById(R.id.news_title_textview);
-        newsDescTextView = (TextView) findViewById(R.id.news_desc_textview);
+        imageView =  findViewById(R.id.image_view_news);
+        newsTitleTextView =  findViewById(R.id.news_title_textview);
+        newsDescTextView =  findViewById(R.id.news_desc_textview);
 
         Picasso.with(this).load(imageUrl).fit().centerInside().into(imageView);
         newsTitleTextView.setText(newsTitle);
