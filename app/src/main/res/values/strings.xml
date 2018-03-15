@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">N3WS FEED</string>
+
+    <string name="desc_of_single_news_itemimage_">This is current news image of single news item</string>
+</resources>
