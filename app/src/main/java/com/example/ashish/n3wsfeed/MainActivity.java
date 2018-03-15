@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements NewsAdapter.OnRec
 
     }
 
+
     private void parseJsonFromFile() {
 
         // Set progressdialog title
